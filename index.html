@@ -21,7 +21,6 @@
         header p { font-size: 1.2rem; color: #9ca3af; max-width: 600px; margin: 0 auto; line-height: 1.6; }
         header p span { color: #00f2fe; font-weight: 600; }
 
-        /* Main Content wrapper to push footer down */
         .main-content { flex: 1; }
 
         /* Services Grid */
@@ -51,7 +50,7 @@
         .submit-btn { width: 100%; background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%); color: #0b0f19; border: none; padding: 18px; font-size: 1.1rem; border-radius: 14px; cursor: pointer; font-weight: 800; transition: all 0.3s; box-shadow: 0 4px 20px rgba(0, 242, 254, 0.3); }
         .submit-btn:hover { transform: scale(1.02); box-shadow: 0 8px 30px rgba(0, 242, 254, 0.5); }
 
-        /* Trending Gen-Z Footer Section */
+        /* Footer */
         footer { background: rgba(255, 255, 255, 0.02); border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; padding: 30px 20px; font-size: 0.95rem; color: #9ca3af; }
         footer span { background: linear-gradient(135deg, #f472b6 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 600; }
     </style>
@@ -59,13 +58,11 @@
 <body>
 
     <div class="main-content">
-        <!-- Hero Header -->
         <header>
             <h1>Welcome to <span class="brand-name">Shree.AI Digital</span></h1>
             <p>We don't just follow trends, we create them. High-voltage digital marketing powered by <span>AI intelligence</span>.</p>
         </header>
 
-        <!-- Services Container -->
         <div class="services-container">
             <div class="service-box glass-card">
                 <span class="badge b-purple">Instant Scale</span>
@@ -87,7 +84,11 @@
         <!-- Contact Form Section -->
         <div class="contact-section glass-card">
             <h2>Let's Build Something Big</h2>
-            <form action="submit.php" method="POST">
+            <form action="https://web3forms.com" method="POST">
+                
+                <!-- Aapki Personal Access Key Yahan Set Ho Gayi Hai -->
+                <input type="hidden" name="access_key" value="c64501be-ea9d-48e3-b8fd-4308902b25a3">
+
                 <div class="form-group">
                     <label>What should we call you?</label>
                     <input type="text" name="name" placeholder="Your name or brand" required>
@@ -105,7 +106,6 @@
         </div>
     </div>
 
-    <!-- Footer Area -->
     <footer>
         <p>&copy; 2026 Shree.AI Digital. Design and Developed by <span>Surbhi Sharma</span> ✨</p>
     </footer>
